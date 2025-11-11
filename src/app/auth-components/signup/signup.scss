@@ -1,0 +1,55 @@
+[nz-form] {
+  max-width: 100%;
+}
+
+.parent {
+  width: 100%;
+  height: 94vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.child {
+  padding: 40px;
+  width: 400px;
+  background-color: white;
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.imgDiv {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.heading {
+  font-size: 26px;
+  font-weight: 600;
+  color: #003973;
+  margin: 0;
+}
+
+.login-form-margin {
+  margin-bottom: 16px;
+}
+
+.login-form-button {
+  width: 100%;
+  background-color: #001529;
+  border: none;
+  color: white;
+}
+
+button:hover {
+  background-color: #002d6b;
+}
+
+a {
+  color: #1890ff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
