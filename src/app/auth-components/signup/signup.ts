@@ -8,6 +8,7 @@ import { NzFormModule } from 'ng-zorro-antd/form';
 import { NzInputModule } from 'ng-zorro-antd/input';
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzNotificationService } from 'ng-zorro-antd/notification';
+import { RouterLink, RouterOutlet } from "@angular/router";
 
 @Component({
   selector: 'app-signup',
@@ -19,7 +20,9 @@ import { NzNotificationService } from 'ng-zorro-antd/notification';
     NzFormModule,
     NzInputModule,
     NzButtonModule,
-  ],
+    RouterOutlet,
+    RouterLink
+],
   templateUrl: './signup.html',
   styleUrls: ['./signup.scss'],
 })
@@ -32,7 +35,7 @@ confirmationValidator = (control: FormControl): { [s: string]: boolean } => {
   }else if(control.value !== this.validateForm.controls['password'].value){
   return { confirm: true, error: true };
   }
-  return {};
+ return {};
 }
 
   constructor(private service: Auth, private fb: FormBuilder,private notification:NzNotificationService) {}

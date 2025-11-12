@@ -29,9 +29,12 @@
   color: #003973;
   margin: 0;
 }
+.heading:hover{
+  text-decoration: underline;
+}
 
 .login-form-margin {
-  margin-bottom: 16px;
+  margin-bottom: 10px;
 }
 
 .login-form-button {
@@ -39,6 +42,7 @@
   background-color: #001529;
   border: none;
   color: white;
+  font-size: 16px;
 }
 
 button:hover {
@@ -52,4 +56,10 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+span{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-size: 18px;
 }
