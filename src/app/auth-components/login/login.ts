@@ -6,7 +6,7 @@ import { NzFormModule } from 'ng-zorro-antd/form';
 import { NzInputModule } from 'ng-zorro-antd/input';
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzSpinModule } from 'ng-zorro-antd/spin';
-import { RouterLink } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 import { Auth } from '../../auth-services/auth-service/auth';
 import { Storage as StorageService } from '../../auth-services/storage-service/storage';
 @Component({
@@ -27,7 +27,7 @@ export class Login implements OnInit {
   loginForm!: FormGroup;
   isSpinning = false;
 
-  constructor(private fb: FormBuilder, private service: Auth) {}
+  constructor(private fb: FormBuilder, private service: Auth, private router:Router) {}
 
   ngOnInit(): void {
     this.loginForm = this.fb.group({
@@ -53,6 +53,11 @@ export class Login implements OnInit {
         console.log(user);
         StorageService.saveToken(res.jwt);
         StorageService.saveUser(user);
+        if(StorageService.isAdminLoggedIn()){
+          this.router.navigateByUrl("admin/dashboard");
+        }else if(StorageService.isCustomerLoggedIn()){
+          this.router.navigateByUrl("customer/dashboard");
+        }
       }else{
         console.log("Login failed(Wrong credentials)");
       }

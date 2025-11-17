@@ -27,7 +27,6 @@
             </ng-template>
           </nz-form-item>
 
-          <!-- Password Field -->
           <nz-form-item>
             <nz-form-control nzHasFeedback [nzErrorTip]="passwordErrorTpl">
               <nz-input-group nzPrefixIcon="lock">
@@ -36,7 +35,7 @@
                   type="password"
                   formControlName="password"
                   placeholder="Password"
-                  id="password" />
+                  id="password"/>
               </nz-input-group>
             </nz-form-control>
             <ng-template #passwordErrorTpl let-control>
