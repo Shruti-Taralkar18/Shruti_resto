@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { NgZorroAntdModule } from "../../../../DemoNgZorroAntdModule";
 
 @Component({
   selector: 'app-add-category',
-  imports: [],
+  imports: [NgZorroAntdModule],
   templateUrl: './add-category.html',
   styleUrl: './add-category.scss',
 })
