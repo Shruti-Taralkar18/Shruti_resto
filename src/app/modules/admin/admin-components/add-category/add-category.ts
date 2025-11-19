@@ -8,5 +8,6 @@ import { NgZorroAntdModule } from "../../../../DemoNgZorroAntdModule";
   styleUrl: './add-category.scss',
 })
 export class AddCategory {
+  p
 
 }

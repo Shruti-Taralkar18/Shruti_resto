@@ -1,52 +1,58 @@
-.parent{
-    width: 100%;
-    min-height:100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.parent {
+  width: 100%;
+  min-height: 92vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.child{
-    padding: 50px;
-    width: 100%;
-    max-width: 680px;
-    background-color: white;
-    box-shadow: 1px 1px 15px -7px rgba(0, 0, 0,0.1);
-    border-radius: 5px;
+
+.child {
+  padding: 40px 50px;
+  width: 100%;
+  max-width: 650px;
+  background-color: white;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
 }
-.imgDiv{
-    width: 100%;
-    text-align: center;
-    margin-bottom: 20px;
+
+.title {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 26px;
+  font-weight: 600;
+  color: #003973;
 }
-.profile-badge{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+.profile-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
 }
-.profile{
-    height: 180px;
-    width: 180px;
-    margin-bottom: 5px;
-    object-fit: cover;
-    border-radius: 50%;
+
+.profile {
+  height: 180px;
+  width: 180px;
+  object-fit: cover;
+//   border-radius: 50%;
+//   border: 2px solid #00397320;
 }
-.upload-label{
-    cursor: pointer;
+
+.upload-label {
+  cursor: pointer;
 }
-.upload-icon{
-    width: 70px;
-    height: 35px;
-    margin-top: 10px;
+
+.login-form-button {
+  margin-top: 20px;
+  width: 100%;
+  background-color: #003973;
+  border: none;
+  font-size: 16px;
 }
-.login-form-button{
-    margin-top: 20px;
-    width: 80%;
-    background-color: #003973;
-    border: none;
-    margin-left: 53px;
+
+.login-form-button:hover {
+  background-color: white !important;
+  color: #003973 !important;
+  border: 1px solid #003973 !important;
 }
-.login-form-button:hover{
-        background-color: rgb(248, 246, 246);
-        color: #003973;
-        border: 1px solid #003973;
-    }
